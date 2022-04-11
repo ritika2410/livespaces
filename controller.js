@@ -15,7 +15,7 @@ app.controller('items', function($scope) {
     "button": "@0987ikjhgn",
     "image": "https://pbs.twimg.com/card_img/1512019925216514053/yBdzPFi9?format=jpg&name=medium"
   }, {
-    "name": "The Vincent Van Dough Gallery ",
+    "name": "The Vincent Van Dough ",
     "button": "@65ufghjnvbn",
     "image": "http://images.summitmedia-digital.com/spotph/images/2019/10/01/van-gogh-alive-640-1569919354.jpg"
   }, {

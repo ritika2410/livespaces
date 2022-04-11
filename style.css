@@ -147,6 +147,28 @@ p {
           transform: translateY(80px);
           opacity: 0;
         } */
+        @media only screen and (max-width: 600px) {
+          h1 {
+            padding-top: 30px;
+            color: black;
+            font-weight: bolder;
+            margin-left: 6px;
+           
+          }
+          p {
+          
+            margin-left: 1px;
+          }
+          .buttons{
+            display: grid;
+
+          }
+          .product {
+            width: 100%;
+            
+            
+          }
+        }
 
 
 

@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <script type="text/javascript" src="angular.min.js"> </script>
+  <script type="text/javascript" src="controller.js"> </script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href='style.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1> Live Spaces</h1>
+    <p> <i class="fa fa-check-circle" style="font-size:18px; color: black;"></i> All NFTs on Cyber either belong to or
+      were minted by their space creater.</p>
+    <div class="row"> </div>
+  </div>
+  <div class="shop" ng-app="shop" ng-controller="items">
+    <input type="text" class="filter" placeholder="search" ng-model="search.name" />
+    <div class="container"><a class="btn btn-light me-2 rounded-pill ml-3" href="" target="_blank" role="button">
+      &#128293; 24h Trending</a>
+    <a class="btn btn-light me-2 rounded-pill ml-4" target="_blank" href="" role="button">Latest shows</a>
+    <a class="btn btn-dark me-2 rounded-pill ml-4" target="_blank" href="" role="button">Most Popular</a>
+    <a class="btn btn-light me-2 rounded-pill ml-4" target="_blank" href="" role="button"> &#128142; In Genesis
+      </i></a>
+    <a class="btn btn-light me-2 rounded-pill ml-4" target="_blank" href="" role="button"> &#128725;In Temple</a>
+    <a class="btn btn-light me-2 rounded-pill ml-4" target="_blank" href="" role="button"> &#128279;In Void</a>
+    <a class="btn btn-light me-2 rounded-pill ml-4" target="_blank" href="" role="button"> &#128752;#BAYC</a>
+  </div>
+  <div class="product" ng-repeat="product in products | filter:search">
+    <div class="image" back-img="{{product.image}}">
+
+    </div>
+    <div class="details">
+      <h4 class="name">{{product.name | uppercase}}</h4></div>
+      <h4 class="button">{{product.button}}</h4>
+
+
+
+    </div>
+  </div>
+  </div>
+
+</body>
+
+
+</html>
